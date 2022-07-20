@@ -1,0 +1,16 @@
+CREATE DATABASE practica;
+
+USE practica;
+
+CREATE TABLE usuarios (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    DNI CHAR(9) NOT NULL UNIQUE,
+    tel VARCHAR(13) NOT NULL,
+    email VARCHAR(320) NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(200) NOT NULL,
+    pais VARCHAR(100) NOT NULL,
+    CP CHAR(5),
+    direccion1 VARCHAR(100),
+    direccion2 VARCHAR(100)
+)
